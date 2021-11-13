@@ -1,6 +1,7 @@
 body{
   background-color: white;
 }
+
 canvas.wave{
   padding-left: 0;
    padding-right: 0;
@@ -51,9 +52,9 @@ div.button_right{
   position:fixed;
   padding: 20px;
   gap:10px;
-	width:80px;
+	width:300px;
 	height:200px;
-	right:120px;
+	right:80px;
 	top:70px;
   display:inline-table;
   text-align:justify;
