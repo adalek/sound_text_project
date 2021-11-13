@@ -25,25 +25,25 @@
       <source src="assets/song2.mp3" type="audio/mp3">
     </audio>
     <div class="button">
-      <button class="b" onclick="cs_change_music('assets/01.wav');">music 1</button>
-      <button class="b" onclick="cs_change_music('assets/02.wav');">music 2</button>
-      <button class="b" onclick="cs_change_music('assets/03.wav');">music 3</button>
-      <button class="b" onclick="cs_change_music('assets/04.wav');">music 4</button>
-      <button class="b" onclick="cs_change_music('assets/05.wav');">music 5</button>
-      <button class="b" onclick="cs_change_music('assets/06.wav');">music 6</button>
-      <button class="b" onclick="cs_change_music('assets/07.wav');">music 7</button>
-      <button class="b" onclick="cs_change_music('assets/08.wav');">music 8</button>
-      <button class="b" onclick="cs_change_music('assets/09.wav');">music 9</button>
-      <button class="b" onclick="cs_change_music('assets/10.wav');">music 10</button>
-      <button class="b" onclick="cs_change_music('assets/11.wav');">music 11</button>
-      <button class="b" onclick="cs_change_music('assets/12.wav');">music 12</button>
-      <button class="b" onclick="cs_change_music('assets/13.wav');">music 13</button>
-      <button class="b" onclick="cs_change_music('assets/14.wav');">music 14</button>
-      <button class="b" onclick="cs_change_music('assets/15.wav');">music 15</button>
-      <button class="b" onclick="cs_change_music('assets/16.wav');">music 16</button>
-      <button class="b" onclick="cs_change_music('assets/17.wav');">music 17</button>
-      <button class="b" onclick="cs_change_music('assets/18.wav');">music 18</button>
-      <button class="b" onclick="cs_change_music('assets/19.wav');">music 19</button>
+      <button class="b" onclick="cs_change_music('assets/01.wav');">track 01</button>
+      <button class="b" onclick="cs_change_music('assets/02.wav');">track 02</button>
+      <button class="b" onclick="cs_change_music('assets/03.wav');">track 03</button>
+      <button class="b" onclick="cs_change_music('assets/04.wav');">track 04</button>
+      <button class="b" onclick="cs_change_music('assets/05.wav');">track 05</button>
+      <button class="b" onclick="cs_change_music('assets/06.wav');">track 06</button>
+      <button class="b" onclick="cs_change_music('assets/07.wav');">track 07</button>
+      <button class="b" onclick="cs_change_music('assets/08.wav');">music 08</button>
+      <button class="b" onclick="cs_change_music('assets/09.wav');">track 09</button>
+      <button class="b" onclick="cs_change_music('assets/10.wav');">track 10</button>
+      <button class="b" onclick="cs_change_music('assets/11.wav');">track 11</button>
+      <button class="b" onclick="cs_change_music('assets/12.wav');">track 12</button>
+      <button class="b" onclick="cs_change_music('assets/13.wav');">track 13</button>
+      <button class="b" onclick="cs_change_music('assets/14.wav');">track 14</button>
+      <button class="b" onclick="cs_change_music('assets/15.wav');">track 15</button>
+      <button class="b" onclick="cs_change_music('assets/16.wav');">track 16</button>
+      <button class="b" onclick="cs_change_music('assets/17.wav');">track 17</button>
+      <button class="b" onclick="cs_change_music('assets/18.wav');">track 18</button>
+      <button class="b" onclick="cs_change_music('assets/19.wav');">track 19</button>
 
     </div>
     <div class="button_right">
@@ -82,7 +82,7 @@
    function cs_change_music(music)
    {
      name = music.slice(7,-4)
-     document.getElementById("p1").innerHTML = name;
+     document.getElementById("p1").innerHTML = "Track "+name;
      document.getElementById("p2").innerHTML = introductions[name];
 
      // document.getElementById("my-audio").pause();
