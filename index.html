@@ -25,40 +25,64 @@
       <source src="assets/song2.mp3" type="audio/mp3">
     </audio>
     <div class="button">
-      <button class="b" onclick="cs_change_music('assets/Said The Sky - listen.mp3');">music 1</button>
-      <button class="b" onclick="cs_change_music('assets/Jacoo.mp3');">music 2</button>
-      <button class="b" onclick="cs_change_music('assets/Sappheiros - Memories.mp3');">music 3</button>
-      <button class="b" onclick="cs_change_music('assets/song6.wav');">music 4</button>
-      <button class="b" onclick="cs_change_music('assets/song2.mp3');">music 5</button>
-      <button class="b" onclick="cs_change_music('assets/Said The Sky - listen.mp3');">music 1</button>
-      <button class="b" onclick="cs_change_music('assets/Jacoo.mp3');">music 6</button>
-      <button class="b" onclick="cs_change_music('assets/Sappheiros - Memories.mp3');">music 3</button>
-      <button class="b" onclick="cs_change_music('assets/song6.wav');">music 7</button>
-      <button class="b" onclick="cs_change_music('assets/song2.mp3');">music 8</button>
-      <button class="b" onclick="cs_change_music('assets/Said The Sky - listen.mp3');">music 9</button>
-      <button class="b" onclick="cs_change_music('assets/Jacoo.mp3');">music 10</button>
-      <button class="b" onclick="cs_change_music('assets/Sappheiros - Memories.mp3');">music 11</button>
-      <button class="b" onclick="cs_change_music('assets/song6.wav');">music 12</button>
-      <button class="b" onclick="cs_change_music('assets/song2.mp3');">music 13</button>
-      <button class="b" onclick="cs_change_music('assets/Said The Sky - listen.mp3');">music 14</button>
-      <button class="b" onclick="cs_change_music('assets/Jacoo.mp3');">music 15</button>
-      <button class="b" onclick="cs_change_music('assets/Sappheiros - Memories.mp3');">music 16</button>
-      <button class="b" onclick="cs_change_music('assets/song6.wav');">music 17</button>
-      <button class="b" onclick="cs_change_music('assets/song2.mp3');">music 18</button>
+      <button class="b" onclick="cs_change_music('assets/01.wav');">music 1</button>
+      <button class="b" onclick="cs_change_music('assets/02.wav');">music 2</button>
+      <button class="b" onclick="cs_change_music('assets/03.wav');">music 3</button>
+      <button class="b" onclick="cs_change_music('assets/04.wav');">music 4</button>
+      <button class="b" onclick="cs_change_music('assets/05.wav');">music 5</button>
+      <button class="b" onclick="cs_change_music('assets/06.wav');">music 6</button>
+      <button class="b" onclick="cs_change_music('assets/07.wav');">music 7</button>
+      <button class="b" onclick="cs_change_music('assets/08.wav');">music 8</button>
+      <button class="b" onclick="cs_change_music('assets/09.wav');">music 9</button>
+      <button class="b" onclick="cs_change_music('assets/10.wav');">music 10</button>
+      <button class="b" onclick="cs_change_music('assets/11.wav');">music 11</button>
+      <button class="b" onclick="cs_change_music('assets/12.wav');">music 12</button>
+      <button class="b" onclick="cs_change_music('assets/13.wav');">music 13</button>
+      <button class="b" onclick="cs_change_music('assets/14.wav');">music 14</button>
+      <button class="b" onclick="cs_change_music('assets/15.wav');">music 15</button>
+      <button class="b" onclick="cs_change_music('assets/16.wav');">music 16</button>
+      <button class="b" onclick="cs_change_music('assets/17.wav');">music 17</button>
+      <button class="b" onclick="cs_change_music('assets/18.wav');">music 18</button>
+      <button class="b" onclick="cs_change_music('assets/19.wav');">music 19</button>
+
     </div>
     <div class="button_right">
-      <h1>hhhhh</h1>
-      <p>aaaaaaaaaaaaaaaa</p>
-      <p>aaaaaaaaaaa</p>
+      <h1>Songs</h1>
+      <p id="p1">this is the introduction of the music</p>
+      <p id="p2">if document getelementbyid source == </p>
 
 
     </div>
 
 
     <script type="text/javascript">
-
+    //dictionary of each song's introduction
+    var introductions = {
+      "01": "this is a piece that is generated",
+      "02": "hellow world this is the introduction of song6 it is inspired by",
+      "03": "some value",
+      "04":"",
+      "05":"",
+      "06":"",
+      "07":"",
+      "08":"",
+      "09":"",
+      "10":"",
+      "11":"",
+      "12":"",
+      "13":"",
+      "14":"",
+      "15":"",
+      "16":"",
+      "17":"",
+      "18":"",
+      "19":"",
+    };
    function cs_change_music(music)
    {
+     name = music.slice(7,-4)
+     document.getElementById("p1").innerHTML = name;
+     document.getElementById("p2").innerHTML = introductions[name];
 
      // document.getElementById("my-audio").pause();
      document.getElementById("my-audio").setAttribute('src', music);
