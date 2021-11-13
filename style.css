@@ -51,12 +51,12 @@ div.button_right{
   position:fixed;
   padding: 20px;
   gap:10px;
-	width:60px;
+	width:80px;
 	height:200px;
 	right:120px;
 	top:70px;
-  display:grid;
-  text-align: center;
+  display:inline-table;
+  text-align:justify;
   z-index: 999;
 }
 .b{
