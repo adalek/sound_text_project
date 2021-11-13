@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sound Text Project</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js" crossorigin="anonymous"></script>
+    <script src="./sketch.js"></script>
+</head>
+
+
+
+<body>
+
+
+  <div id="myContainer" >
+
+    <canvas class="wave" id="output" height=400% width=400%></canvas>
+
+    <audio id="my-audio">
+      <source src="assets/song2.mp3" type="audio/mp3">
+    </audio>
+    <div class="button">
+      <button class="b" onclick="cs_change_music('assets/Said The Sky - listen.mp3');">music 1</button>
+      <button class="b" onclick="cs_change_music('assets/Jacoo.mp3');">music 2</button>
+      <button class="b" onclick="cs_change_music('assets/Sappheiros - Memories.mp3');">music 3</button>
+      <button class="b" onclick="cs_change_music('assets/song6.wav');">music 4</button>
+      <button class="b" onclick="cs_change_music('assets/song2.mp3');">music 5</button>
+      <button class="b" onclick="cs_change_music('assets/Said The Sky - listen.mp3');">music 1</button>
+      <button class="b" onclick="cs_change_music('assets/Jacoo.mp3');">music 6</button>
+      <button class="b" onclick="cs_change_music('assets/Sappheiros - Memories.mp3');">music 3</button>
+      <button class="b" onclick="cs_change_music('assets/song6.wav');">music 7</button>
+      <button class="b" onclick="cs_change_music('assets/song2.mp3');">music 8</button>
+      <button class="b" onclick="cs_change_music('assets/Said The Sky - listen.mp3');">music 9</button>
+      <button class="b" onclick="cs_change_music('assets/Jacoo.mp3');">music 10</button>
+      <button class="b" onclick="cs_change_music('assets/Sappheiros - Memories.mp3');">music 11</button>
+      <button class="b" onclick="cs_change_music('assets/song6.wav');">music 12</button>
+      <button class="b" onclick="cs_change_music('assets/song2.mp3');">music 13</button>
+      <button class="b" onclick="cs_change_music('assets/Said The Sky - listen.mp3');">music 14</button>
+      <button class="b" onclick="cs_change_music('assets/Jacoo.mp3');">music 15</button>
+      <button class="b" onclick="cs_change_music('assets/Sappheiros - Memories.mp3');">music 16</button>
+      <button class="b" onclick="cs_change_music('assets/song6.wav');">music 17</button>
+      <button class="b" onclick="cs_change_music('assets/song2.mp3');">music 18</button>
+    </div>
+    <div class="button_right">
+      <h1>hhhhh</h1>
+      <p>aaaaaaaaaaaaaaaa</p>
+      <p>aaaaaaaaaaa</p>
+
+
+    </div>
+
+
+    <script type="text/javascript">
+
+   function cs_change_music(music)
+   {
+
+     // document.getElementById("my-audio").pause();
+     document.getElementById("my-audio").setAttribute('src', music);
+     document.getElementById("my-audio").load();
+     // document.getElementById("my-audio").play();
+
+   }
+
+   function stop_playing(){
+     document.getElementById("my-audio").pause();
+
+   }
+
+</script>
+
+    <script src="https://cdn.jsdelivr.net/gh/foobar404/wave.js/dist/bundle.iife.js"></script>
+    <script>
+
+          let wave = new Wave();
+          options = {type:"rings", colors:["red","red","blue"]};
+        wave.fromElement("my-audio","output", options);
+    </script>
+
+  </div>
+
+
+</body>
+
+
+
+</html>
